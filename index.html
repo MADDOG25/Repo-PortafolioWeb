@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portafolio JeffreyDev25</title>
+    <!-- STYLE -->
+    <link rel="stylesheet" href="style.css">
+    <!-- CDN AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- JS -->
+    <link rel="stylesheet" href="app.js">
+  </head>
+  <body>
+
+
+<!-- NAV BAR -->
+    <nav class="cont-navbar" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="icon/icons8-account-64.png" alt="Logo" width="35" height="35">JeffreyDev25</a>
+        </div>
+        <div class="container-text-bar">
+          <a class="text-bar" href="#section-about">About</a>
+          <a class="text-bar" href="#section-project">Projects</a>
+          <a class="text-bar" href="#">Contact</a>
+          <!-- <a href="#"><img src="icon/icons8-menu-squared-64.png" alt="menu" width="40" height="40"></a> 
+        </div> -->
+    </nav>
+
+
+<!-- SECTION BACKGROUND -->
+    <section class="container-img">
+      <img src="img-bg/fondo1.jpg" alt="Designed by stories/Freepik">
+    </section>
+
+
+<!-- SECTION CONTENT -->
+    <section id="section-about" class="container-about">
+      <article class="flex-item">
+        <h2>About Me</h2>
+          <article class="flex-item-profile-card">
+            <img src="img/imgprofile.jpg" alt="personas" width="600" height="500" loading="lazy">
+              <p>
+              Desarrollador Front End Junior, cursando Lic en Informática Educativa y Empresarial en la Universidad de Panamá.
+              A principios del año 2022 empeze a desarrollarme como desarrollador y diseñador web autónomo. He adquirido habilidades de gestión de proyectos y de tiempo, cumpliendo eficazmente con los plazos y proyectos de la carrera universitaria.
+              <br><br>
+              Actualmente estoy disponible para discutir su proyecto por teléfono o vía Skype. En estos días me gusta pasar mi tiempo libre leyendo libros, realizando ejercicios, jugando al fútbol, aprendiendo ingles.
+              </p>
+          </article>
+      </article>
+    </section>
+
+
+    <!-- SECTION SKILL BAR -->
+    <section class="section-skill-bar">
+      <div class="skill">
+        <h1>My Skills</h1>
+        <li><h3>Html</h3>
+          <span class="bar"><span class="html"></span></span>
+        </li>
+        <li><h3>Css</h3>
+          <span class="bar"><span class="css"></span></span>
+        </li>
+        <li><h3>JavaScript</h3>
+          <span class="bar"><span class="javascript"></span></span>
+        </li>
+        <li><h3>Boostrap</h3>
+          <span class="bar"><span class="boostrap"></span></span>
+        </li>
+        <li><h3>Git & Github</h3>
+          <span class="bar"><span class="git"></span></span>
+        </li>
+      </div>
+    </section>
+
+
+    <!-- SECTION PROJECTS -->
+    <section id="section-project" class="container-project">
+      <div class="container-project-group">
+        <h2>Projects</h2>
+        <h3>Simple Calculator</h3>
+        <center><img src="img/cap calculadora.png" alt="project1"></center>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi temporibus vitae ipsum doloremque voluptates placeat debitis.</p>
+          <div class="cont-link_icon">
+            <a href="enlace a codigo html"><i class="fa-brands fa-html5"></i></a><a href="enlace a codigo css"><i class="fa-brands fa-css3-alt"></i></a>
+          </div>
+          <div class="cont-link_view">
+            <a href="#">View project</a>
+          </div>
+        </div>
+        
+        </div>
+    </section>
+
+
+<!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="social-media">
+          <a href="https://twitter.com/The_Franks25" target="_blank"><i class="fa-brands fa-twitter" id="icono-app"></i></a>
+          <a href="https://www.instagram.com/jeffreydev25/" target="_blank"><i class="fa-brands fa-square-instagram" id="icono-app"></i></a>
+          <a href="https://www.linkedin.com/in/jeffrey-morgan-itsupport-freelancer/" target="_blank"><i class="fa-brands fa-linkedin" id="icono-app"></i></a>
+          <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fa-brands fa-google" id="icono-app"></i></a>
+          <a href="https://github.com/MADDOG25/New-Repositorio3" target="_blank"><i class="fa-brands fa-github" id="icono-app"></i></a>
+        </div>
+        <div class="text-brand">
+          <a href="">Home</a> ::
+          <a href="">Portafolio</a> ::
+          <a href="">About</a> ::
+          <a href="">Resources</a> ::
+          <a href="">Contact</a> ::
+          <a href="">Service</a>
+        </div>
+      <p>Copyright © 2022 Jeffrey Morgan • Developer Front-End</p>
+      <a href="#">
+        <img src="icon/icons8-collapse-arrow.png" width="40" height="40" alt="collapse-arrow">
+      </a>
+      </div>
+    </footer>
+    
+    
+
+    <!-- SCRIPT MENU -->
+  <script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  }else {
+    document.getElementById("navbar").style.top = "-60px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+</body>
+<!-- CDN FONTAWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</html>
