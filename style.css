@@ -23,6 +23,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #EFF5F5;
 }
 #navbar{
     display: flex;
@@ -30,7 +31,7 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%; padding: 0.5em;
-    background: #EEEEEE;
+    background: #EFF5F5;
     position: fixed;
     top: 0;
     transition: top 1s;
@@ -108,6 +109,7 @@ body{
     position: relative;
     overflow: hidden;
     transition: all 0.4s ease;
+    background-color: #D6E4E5;
 }
 .flex-item-profile-card:hover{
     box-shadow: 0 15px 18px #7047bb7e;
@@ -232,9 +234,9 @@ h3{
 .container-project{
     display: flex;
     justify-content: center;
+    flex-flow: column wrap;
     margin: 20px;
     margin-bottom: 4em;
-    /* border: 1px solid black; */
 }
 .container-project h2{
     display: flex;
@@ -261,6 +263,7 @@ h3{
     display: flex;
     align-items: center;
     justify-content: center;
+    object-fit: contain; /*The image keeps its aspect ratio, but is resized to fit within the given dimension*/
     border-radius: 40px;
     margin-bottom: 2em;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -268,6 +271,7 @@ h3{
 .container-project-group p{
     display: flex;
     justify-content: center;
+    margin-top: 2.5em;
     margin: 2px 0;
     margin-bottom: 1em;
     font-size: 16px;
@@ -276,11 +280,11 @@ h3{
 }
 .container-project-group a{
     display: flex;
-    justify-content: center;
-    margin-right: 2em;
-    margin-bottom: 1em;
+    justify-content: space-evenly;
+    margin: 14px;
+    margin-bottom: 1.5em;
     color: #9555a8;
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
 } 
@@ -290,12 +294,16 @@ h3{
 }
 .cont-link_icon a i{
     font-size: 40px;
+    cursor: pointer;
     transition: all 0.3s ease-in;
 }
 .cont-link_icon a i:hover{
     color: #f18271;
 }
 .cont-link_view a{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 4em;
+    font-size: 20px;
     transition: all 0.3s ease-in;
 }
 .cont-link_view a:hover{
