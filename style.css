@@ -105,25 +105,49 @@ body{
     background: rgba(255, 255, 255, 0.1);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(15px);
-    box-shadow: 0 15px 18px  rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 18px #7047bb7e;
     position: relative;
     overflow: hidden;
-    transition: all 0.4s ease;
+    transition: all 0.3s ease;
     background-color: #439a9781;
-}
-.flex-item-profile-card:hover{
-    box-shadow: 0 15px 18px #7047bb7e;
 }
 .flex-item-profile-card img{
     padding: 1em;
     /* cursor: pointer; */
 }
-.flex-item-profile-card p{
+.flex-item-profile-card .text-about h3{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(68, 68, 68);
+}
+.flex-item-profile-card .text-about p{
     width: 100%;
     padding: 1em;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     color: rgb(68, 68, 68);
+}
+.icon-about{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+.icon-about a{
+    margin: 10px;
+    text-decoration: none;
+    font-size: 40px;
+    color: #9555a8;
+}
+.icon-about a i{
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.icon-about a i:hover{
+    color: #dd7869;
 }
 
 
@@ -146,7 +170,7 @@ h3{
     margin-bottom: 4em;
     color: #fff;
     background: linear-gradient(-45deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 14px 28px #7047bb7e, 0 10px 10px #7047bb7e;
 }
 .skill li{
     margin: 10px 0; padding: 8px;
@@ -267,12 +291,12 @@ h3{
     object-fit: contain; /*The image keeps its aspect ratio, but is resized to fit within the given dimension*/
     border-radius: 40px;
     margin-bottom: 2em;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 14px 24px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .container-project-group p{
     display: flex;
     justify-content: center;
-    margin-top: 2.5em;
+    margin-top: 4em;
     margin: 2px 0;
     margin-bottom: 1em;
     font-size: 16px;
@@ -350,11 +374,14 @@ h3{
 }
 .text-brand a{
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     transition: all 0.3s ease-in;
 }
 .text-brand a:hover{
     color: #439A97;
+}
+.text-brand .space{
+    margin: 0 0.5em 0 0.5em;
 }
 .footer-container p{
     display: flex;
