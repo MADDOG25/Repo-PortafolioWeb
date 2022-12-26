@@ -193,6 +193,22 @@ h3{
     float: left;
     background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
 }
+/* DAR ESTILO PARA EL TRANSFORM AND ANIMATION */
+.bar_span{
+    display: block;
+    width: 100%;
+    margin: .5rem;
+    transform: translate(70%);
+}
+.bar_span span{
+    float: top;
+    padding: 4px;
+    border-radius: 1px 8px;
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
 .html{
     width: 80%;
     animation: html 3s;
@@ -330,6 +346,7 @@ h3{
     margin-bottom: 4em;
     font-size: 20px;
     transition: all 0.3s ease-in;
+    /* CAMBIAR ESTILO PARA QUE EL ELEMENTO ESTE AJUSTADO AL 100% DE SU CONTENEDOR */
 }
 .cont-link_view a:hover{
     color: #f18271;
