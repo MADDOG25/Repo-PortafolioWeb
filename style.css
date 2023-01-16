@@ -39,7 +39,6 @@ header{
     top: 0;
     font-family: 'Roboto Slab', sans-serif;
     background: #EFF5F5;
-    transition: top 1s;
 }
 .container a{
     display: flex;
@@ -462,20 +461,4 @@ h2{
 .cont-img_footer{
     display: flex;
     justify-content: center;
-}
-
-
-/* MEDIA QUERY */
-@media screen and (max-width: 1024px){
-    .navbar{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .container-text-bar{
-        display: flex;
-    }
-}
-@media screen and (max-width: 300px){
-    
 }
